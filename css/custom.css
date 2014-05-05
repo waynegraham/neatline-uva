@@ -1,0 +1,50 @@
+.masthead {
+  padding: 70px 0 80px;
+  color: #1f2c33;
+  padding-bottom: 160px;
+}
+
+.masthead p {
+  font-size: 40px;
+  font-weight: 200;
+  line-height: 1.25;
+}
+
+.jumbotron {
+  text-align: center;
+  background: #fff;
+}
+
+.jumbotron h1 {
+  font-size: 100px;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.jumbotron p {
+  margin-bottom: 30px;
+  color: #898989;
+}
+
+
+/*links*/
+
+.btn.action {
+  padding: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.btn.orange {
+  background: #d23a2c;
+  color: #fff;
+}
+
+.btn.action {
+  border-radius: 2px;
+  margin-top: 22px;
+}
+
+

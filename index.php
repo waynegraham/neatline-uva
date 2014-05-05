@@ -28,22 +28,28 @@ $dirs = array_diff($all_dirs, $hide_dirs);
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/custom.css">
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+<div class="jumbotron masthead">
+  <div class="container">
+    <h1>UVA Faculty Neatline Projects</h1>
+    <p>Neatline in the Classroom</p>
 
-<ul>
-<?php foreach($dirs as $dir): ?>
-  <li><a href="http://<?php echo $dir;  ?>.neatline-uva.org/"><?php echo $dir ?></li>
-<?php endforeach; ?>
-</ul>
+    <?php foreach($dirs as $dir): ?>
+    <p><a class="btn action orange" href="http://<?php echo $dir;  ?>.neatline-uva.org/"><?php echo strtoupper($dir); ?></a></p>
+    <?php endforeach; ?>
 
+  </div>
+</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
