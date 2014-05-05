@@ -26,7 +26,6 @@ $dirs = array_diff($all_dirs, $hide_dirs);
         <title>Neatline@UVa Projects</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -52,6 +51,14 @@ $dirs = array_diff($all_dirs, $hide_dirs);
 
   </div>
 </div>
+
+<footer class="footer">
+<div class="container">
+  <p class="pull-right"><a href="#">Back to top</a></p>
+  <p><a href="http://neatline.org">Neatline</a> is a project of the <a href="http://scholarslab.org">Scholars' Lab</a> at the <a href="http://www.virginia.edu">University of Virginia</a></p>
+</div>
+</footer>
+</div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
@@ -60,7 +67,7 @@ $dirs = array_diff($all_dirs, $hide_dirs);
 <script>
 $(document).ready(function() {
   $('#projects').isotope({
-    itemSelector: '.item',
+    itemSelector: '.project',
     layoutMode: 'masonry'
   });
 });
