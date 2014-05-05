@@ -31,6 +31,9 @@ $dirs = array_diff($all_dirs, $hide_dirs);
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/custom.css">
+<style>
+.project { width: 25%; }
+</style>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -41,15 +44,27 @@ $dirs = array_diff($all_dirs, $hide_dirs);
     <h1>UVA Faculty Neatline Projects</h1>
     <p>Neatline in the Classroom</p>
 
+    <div id="projects">
     <?php foreach($dirs as $dir): ?>
-    <p><a class="btn action orange" href="http://<?php echo $dir;  ?>.neatline-uva.org/"><?php echo strtoupper($dir); ?></a></p>
+      <div class="project"><a class="btn action orange" href="http://<?php echo $dir;  ?>.neatline-uva.org/"><?php echo strtoupper($dir); ?></a></div>
     <?php endforeach; ?>
+    </div>
 
   </div>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  $('#projects').isotope({
+    itemSelector: '.item',
+    layoutMode: 'masonry'
+  });
+});
+</script>
 
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
