@@ -18,17 +18,14 @@ $hide_dirs = array(
 );
 $dirs = array_diff($all_dirs, $hide_dirs);
 ?>
-
-
 <!doctype html>
 <html class="no-js">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Neatline@UVa Projects</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
