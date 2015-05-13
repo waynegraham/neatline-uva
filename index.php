@@ -5,6 +5,7 @@ $hide_dirs = array(
   '..',
   'workshop',
   'current',
+  'example',
   'geoserver',
   'henshaw',
   'holsinger',
@@ -12,9 +13,13 @@ $hide_dirs = array(
   'lovecraft',
   'maps',
   'neatline',
+  'neatline_staging',
   'neatline-uva.org',
   'sandbox',
-  'to_delete'
+  'scholarslab.org',
+  'static.scholarslab.org',
+  'to_delete',
+  'uvasci.org',
 );
 $dirs = array_diff($all_dirs, $hide_dirs);
 ?>
