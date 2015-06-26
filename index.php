@@ -1,5 +1,6 @@
 <?php
 $all_dirs = scandir('/usr/local/projects');
+
 $hide_dirs = array(
   '.',
   '..',
