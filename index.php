@@ -48,7 +48,10 @@ $dirs = array_diff($all_dirs, $hide_dirs);
   <div class="container">
     <h1>UVA Faculty Neatline Projects</h1>
     <p>Neatline in the Classroom</p>
-
+    <p>Scholars' Lab at the University of Virginia Library supports UVa faculty who wish to use Omeka + Neatline in their classrooms by setting up class sites and providing focused training and ongoing support for the faculty member, their TA, and their students.</p>
+  <p>Departments and programs of our faculty collaborators include African American Studies, American Studies, Architecture, Architectural History, Art, English, Urban and Environmental Planning, and Women Gender and Sexuality.
+</p>
+  <p>If you are a UVa faculty member or instructor and would like to consult with us about integrating Omeka + Neatline into a class, please email us at <a href="mailto:scholarslab@virginia.edu">scholarslab@virginia.edu</a>.</p>
     <div id="projects">
     <?php foreach($dirs as $dir): ?>
       <div class="project"><a class="btn action orange" href="http://<?php echo $dir;  ?>.neatline-uva.org/"><?php echo strtoupper($dir); ?></a></div>
